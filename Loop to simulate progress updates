@@ -1,0 +1,22 @@
+import time
+
+# Loop to simulate progress updates
+for i in range(10):
+    # Print progress
+    print(f"Progress: {i}/10", end='\r')
+    # Simulate some processing time
+    time.sleep(1)
+
+print("\nTask complete!")
+
+''' In this example:
+
+We import the time module to introduce a delay.
+
+We have a loop that iterates 10 times.
+
+Inside the loop, we print the current progress using f-strings. The end='\r' argument ensures that the cursor returns to the beginning of the line after printing.
+
+We use time.sleep(1) to pause the execution for 1 second, simulating some processing time.
+
+You'll see the progress updated dynamically on the same line in your terminal. This technique is commonly used to provide progress feedback in command-line applications and scripts.'''
